@@ -1,0 +1,24 @@
+/* Aplica a todo el cuerpo de la página */
+body {
+    background: url('https://www.laityfamilylife.va/content/dam/laityfamilylife/amoris-laetitia/Foto/papa_famiglie_messaggio.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg') no-repeat center center; /* URL de la imagen */
+    background-size: cover; /* Hace que la imagen cubra el 98% del fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Asegura que ocupe todo el alto de la ventana */
+    position: relative; /* Necesario para el pseudo-elemento */
+  }
+  
+  /* Pseudo-elemento para aplicar el desenfoque */
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Hereda la imagen de fondo */
+    filter: blur(10px); /* Aplica el desenfoque */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+    background-size: cover;
+    background-position: center;
+   height: 100vh;
+  }

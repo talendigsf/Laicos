@@ -1,0 +1,105 @@
+/* Contenedor principal */
+.dioesis-list {
+  background-color: #f9fafc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Título de la lista de diócesis */
+.titulo-diocesis {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* Estilo del botón de "Crear/Actualizar" */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Estilo de los items de la lista de diócesis */
+.dioesis-items {
+  list-style: none;
+  padding: 0;
+}
+
+.dioesis-items div {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.dioesis-items div:hover {
+  background-color: #4a90e2; /* Fondo azul al hacer hover */
+  color: white; /* Texto blanco al hacer hover */
+  transform: scale(1.02); /* Aumento de tamaño en hover */
+}
+
+/* Estilo para los elementos de la lista de diócesis */
+.dioesis-items div span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Estilo para el botón de eliminar y editar dentro de cada item */
+.dioesis-items div button {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Botón de editar - fondo amarillo */
+.dioesis-items div button.edit-button {
+  background-color: #f5a623; /* Amarillo */
+}
+
+.dioesis-items div button.edit-button:hover {
+  background-color: #d98e1c; /* Amarillo oscuro */
+  transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Botón de eliminar - fondo rojo */
+.dioesis-items div button.delete-button {
+  background-color: #e04a4a; /* Rojo */
+}
+
+.dioesis-items div button.delete-button:hover {
+  background-color: #c44141; /* Rojo oscuro */
+  transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Estilo de la notificación cuando no hay diócesis */
+.dioesis-items div.no-data {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding: 20px 0;
+  font-style: italic;
+}
