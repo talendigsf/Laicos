@@ -1,0 +1,54 @@
+/* Estilo para el contenedor del splash */
+html {
+  overflow: hidden;
+}
+body{
+  overflow: hidden;
+
+}
+.splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(61, 176, 243);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Contenido centrado */
+  .splash-content {
+    text-align: center;
+  }
+  
+  /* Título de la aplicación */
+  .splash-title {
+    font-size: 8.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  /* Barra de progreso */
+  .progress-bar {
+    width: 80%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #ffffff;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  /* Texto del progreso */
+  .progress-text {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  

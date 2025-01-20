@@ -1,0 +1,121 @@
+/* Contenedor principal */
+.parroquia-list {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Título de la lista de parroquias */
+  .tituloParroquia {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del botón "Nueva Parroquia" */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #357abd;
+  }
+  
+  /* Estilo para el input de búsqueda */
+  .busqueda-parroquia {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilo de la lista de parroquias */
+  .lista-parroquia {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    height: 500px;
+  }
+  
+  .lista-parroquia li {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .lista-parroquia li:hover {
+    background-color: #4a90e2; /* Fondo azul al hacer hover */
+    color: white; /* Texto blanco al hacer hover */
+    transform: scale(1.02); /* Aumento de tamaño en hover */
+  }
+  
+  /* Estilo de los elementos de la lista de parroquias */
+  .lista-parroquia li span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Estilo para el botón de eliminar y editar dentro de cada item */
+  .lista-parroquia li button {
+    background-color:#d98e1c;
+    border: none;
+    cursor: pointer;
+    color: #f3f2f0;
+    font-size: 18px;
+    transition: color 0.3s;
+    
+  }
+  
+  .lista-parroquia li button:hover {
+    color: #357abd;
+  }
+  
+  /* Estilo para el icono de editar */
+  .lista-parroquia li button.edit-button {
+    color: #f5a623;
+  }
+  
+  .lista-parroquia li button.edit-button:hover {
+    color: #fcfbf9;
+  }
+  
+  /* Estilo para el icono de eliminar */
+  .lista-parroquia li button.delete-button {
+    color: #f71818;
+  }
+  
+  .lista-parroquia li button.delete-button:hover {
+    color: #c44141;
+  }
+  
+  /* Estilo de la notificación cuando no hay parroquias */
+  .lista-parroquia li.no-data {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    padding: 20px 0;
+    font-style: italic;
+  }
+  
